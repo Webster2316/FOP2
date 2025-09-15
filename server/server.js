@@ -101,6 +101,7 @@ app.get('/category', (req, res) => {
       if (!acc.includes(obj.category)) {
         acc.push(obj.category);
       }
+      
       return acc;
     }, []).sort();
     console.log(uniqueCategory);
