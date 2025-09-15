@@ -236,6 +236,7 @@ app.get('/category', (req, res) => {
 });
 
 
+
 readAllShoppingTrendData()
     .then(data => {
         shoppingTrendData = data;
