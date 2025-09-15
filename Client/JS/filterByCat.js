@@ -17,7 +17,7 @@ let qryByPromo;
 
 function loadAllData() {
     return new Promise((resolve, reject) => {
-        fetch('http://fop-2.vercel.app/allshoppingtrend')
+        fetch('http://fop2.onrender.com/allshoppingtrend')
             .then(response => response.json())
             .then(function (data) {
                 resolve(data) 
@@ -28,7 +28,7 @@ function loadAllData() {
 // //endpoint 2
 function getGetByGender(gender) {
     return new Promise((resolve, reject) => {
-        fetch(`http://fop-2.vercel.app/bygender/${gender}`)
+        fetch(`http://fop2.onrender.com/bygender/${gender}`)
             .then(response => response.json())
             .then(function (data) {
                 resolve(data) 
@@ -40,7 +40,7 @@ function getGetByGender(gender) {
 
 function getGetByCat(cat) {
     return new Promise((resolve, reject) => {
-        fetch(`http://fop-2.vercel.app/bycategory/${cat}`)
+        fetch(`http://fop2.onrender.com/bycategory/${cat}`)
             .then(response => response.json())
             .then(function (data) {
                 resolve(data) 
@@ -52,7 +52,7 @@ function getGetByCat(cat) {
 
 function getGetBySeason(season) {
     return new Promise((resolve, reject) => {
-        fetch(`http://fop-2.vercel.app/byseason/${season}`)
+        fetch(`http://fop2.onrender.com/byseason/${season}`)
             .then(response => response.json())
             .then(function (data) {
                 resolve(data) 
@@ -63,7 +63,7 @@ function getGetBySeason(season) {
 // //endpoint 5
 function getGetByPromoCodeUsed(bool) {
     return new Promise((resolve, reject) => {
-        fetch(`http://fop-2.vercel.app/bypromocodeused/${bool}`)
+        fetch(`http://fop2.onrender.com/bypromocodeused/${bool}`)
             .then(response => response.json())
             .then(function (data) {
                 resolve(data) 
