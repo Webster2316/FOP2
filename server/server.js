@@ -95,13 +95,14 @@ app.get('/bypromocodeused/:promocodeused', (req, res) => {
    res.json(result);     
 });
 
+
 // Endpoint Query Promo_Code_Used e.g. http://localhost:8081/categogry
 app.get('/category', (req, res) => {   
    const uniqueCategory = shoppingTrendData.reduce((acc, obj) => {
       if (!acc.includes(obj.category)) {
         acc.push(obj.category);
       }
-      
+
       return acc;
     }, []).sort();
     console.log(uniqueCategory);
