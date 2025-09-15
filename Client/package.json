@@ -2,5 +2,9 @@
   "dependencies": {
     "node-fetch": "2.0",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "scripts": {
+  "start": "node index.js"
+}
+
 }
